@@ -5,7 +5,6 @@ import CommunityCards from './CommunityCards';
 import ExperimentViolin from './ExperimentViolin';
 import FeatureInspection from './FeatureInspection';
 import IoUChart from './IoUChart';
-import FailureAnalysis from './FailureAnalysis';
 import PromptInspector from '../prompt/PromptInspector';
 import ReasoningTrace from '../prompt/ReasoningTrace';
 import LayerTimeline from '../prompt/LayerTimeline';
@@ -24,7 +23,6 @@ const TABS = [
   // ── Global analysis (existing) ──
   { label: 'IoU', Component: IoUChart, group: 'global' },
   { label: 'Communities', Component: CommunityCards, group: 'global' },
-  { label: 'Failures', Component: FailureAnalysis, group: 'global' },
   { label: 'Heatmap', Component: LayerHeatmap, group: 'global' },
   { label: 'Scatter', Component: PromptScatter, group: 'global' },
   { label: 'Experiment', Component: ExperimentViolin, group: 'global' },
