@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f0">
+  <meta name="description" content="Explore interactive research on concept geometry, feature circuits, latent structure, and causal interventions in language models.">
+  <title>Research Atlas · Mechanistic Interpretability</title>
+  <link rel="stylesheet" href="hub.css">
+  <script defer src="hub.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header page-width">
+    <a class="brand" href="./" aria-label="Research Atlas home">
+      <svg class="brand-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M7 27 18 7l11 20H7Zm0 0 11-8 11 8M18 7v12" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="7" r="3" fill="currentColor"/><circle cx="7" cy="27" r="3" fill="currentColor"/><circle cx="29" cy="27" r="3" fill="currentColor"/><circle cx="18" cy="19" r="2.5" fill="#f7f6f0" stroke="currentColor"/></svg>
+      <span>Research <strong>Atlas</strong></span>
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#catalogue">Dashboards</a>
+      <a href="#questions">Research questions</a>
+    </nav>
+    <span class="header-note">Mechanistic interpretability</span>
+  </header>
+
+  <main id="main">
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-rule"></span> Representations, circuits &amp; behavior</p>
+        <h1 id="hero-title">Concepts, features,<br><em>and causal interventions.</em></h1>
+        <p class="hero-description">An exploratory research archive on how language models represent concepts, organize features, and respond to intervention. Six dashboards connect the underlying questions to their experimental results.</p>
+        <a class="primary-link" href="#catalogue">Explore the dashboards <span aria-hidden="true">↓</span></a>
+        <div class="hero-index" aria-label="Research perspectives"><span>Geometry</span><i aria-hidden="true">/</i><span>Circuits</span><i aria-hidden="true">/</i><span>Interventions</span></div>
+      </div>
+      <div class="hero-figure" aria-hidden="true">
+        <svg viewBox="0 0 500 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="atlas-grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0v25" stroke="#1b344c" stroke-opacity=".07" stroke-width="1"/></pattern>
+            <linearGradient id="atlas-plane" x1="100" y1="100" x2="400" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#166d69" stop-opacity=".13"/><stop offset="1" stop-color="#166d69" stop-opacity=".015"/></linearGradient>
+            <marker id="atlas-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="m1 1 4 2.5L1 6" stroke="context-stroke" stroke-width="1.2" fill="none"/></marker>
+          </defs>
+          <rect x="24" y="20" width="450" height="350" fill="url(#atlas-grid)"/>
+          <path d="M24 50V20h30M444 20h30v30M24 340v30h30M444 370h30v-30" stroke="#1b344c" stroke-opacity=".35"/>
+          <path d="m74 260 214 77 134-139-209-73Z" fill="url(#atlas-plane)" stroke="#166d69" stroke-opacity=".28"/>
+          <ellipse cx="250" cy="237" rx="133" ry="56" transform="rotate(-21 250 237)" stroke="#166d69" stroke-opacity=".24" stroke-dasharray="4 6"/>
+          <path d="m225 244 165 58M225 244l-93-119M225 244l56-166" stroke-width="1.6" marker-end="url(#atlas-arrow)" stroke="#20394e"/>
+          <path d="m225 244 118-71" stroke="#166d69" stroke-width="2.3" marker-end="url(#atlas-arrow)"/>
+          <path d="m181 227 30-53 64 29 45-68 46 56M211 174l14 70 50-41 45 62 46-74M181 227l44 17 95 21M275 203l68-30" stroke="#166d69" stroke-opacity=".38" stroke-width="1.2"/>
+          <g fill="#f7f6f0" stroke="#166d69" stroke-width="1.5"><circle cx="181" cy="227" r="5"/><circle cx="211" cy="174" r="5"/><circle cx="275" cy="203" r="7"/><circle cx="320" cy="135" r="4"/><circle cx="366" cy="191" r="5"/><circle cx="320" cy="265" r="4"/></g>
+          <circle cx="225" cy="244" r="5" fill="#20394e"/><circle cx="343" cy="173" r="4" fill="#166d69"/>
+          <g fill="#20394e" font-family="Georgia, serif" font-size="23" font-style="italic"><text x="282" y="65">w</text><text x="114" y="116">δ</text><text x="354" y="166" fill="#166d69">u</text><text x="401" y="312">h</text></g>
+          <g fill="#5d6f78" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.3"><text x="44" y="47">REPRESENTATION SPACE</text><text x="44" y="348">DIRECTIONS · FEATURES · READOUTS</text></g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="catalogue" class="catalogue page-width" aria-labelledby="catalogue-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">The collection</p><h2 id="catalogue-title">Choose a view into the research.</h2></div>
+        <p class="section-note">Start with a topic, then explore<br class="desktop-break"> the prompts, layers, and results.</p>
+      </div>
+      <div class="catalogue-tools" hidden>
+        <div class="filter-group" role="group" aria-label="Filter dashboards by topic">
+          <button type="button" class="filter-button" data-topic="all" aria-pressed="true">All views</button>
+          <button type="button" class="filter-button" data-topic="geometry" aria-pressed="false">Math &amp; geometry</button>
+          <button type="button" class="filter-button" data-topic="features" aria-pressed="false">Features &amp; circuits</button>
+          <button type="button" class="filter-button" data-topic="clustering" aria-pressed="false">Clustering &amp; latent structure</button>
+          <button type="button" class="filter-button" data-topic="interventions" aria-pressed="false">Causal interventions</button>
+        </div>
+        <div class="search-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.6"/></svg>
+          <label class="visually-hidden" for="dashboard-search">Search dashboards, methods, or concepts</label>
+          <input id="dashboard-search" type="search" placeholder="Search concepts, methods, languages…" autocomplete="off" aria-controls="dashboard-grid">
+        </div>
+      </div>
+      <div class="results-bar"><p id="result-count" role="status" aria-live="polite" aria-atomic="true">6 dashboards</p><button type="button" class="text-button" id="clear-filters" hidden>Clear filters <span aria-hidden="true">×</span></button></div>
+
+      <div id="dashboard-grid" class="dashboard-grid">
+        <article class="dashboard-card geometry-card" data-topics="geometry interventions" data-keywords="math mathematics geometry concept axis residual representation probe subspace readout usage delta w u whitening trajectory steering depth chapter6 chapter 6">
+          <a class="dashboard-link" href="dashboards/geometry/" aria-labelledby="geometry-title" aria-describedby="geometry-description">
+            <div class="card-topline"><span class="card-number">01 / GEOMETRY</span><span class="card-glyph math-glyph" aria-hidden="true">w · δ · u</span></div>
+            <h3 id="geometry-title">Concept-axis geometry</h3>
+            <p id="geometry-description">Compare representation and readout directions across depth. Explore probe geometry and the effects of steering.</p>
+            <ul class="card-tags" aria-label="Topics"><li>Concept directions</li><li>Layer trajectories</li><li>Steering</li></ul>
+            <div class="card-footer"><span>Chapter 6 · results explorer</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+        <article class="dashboard-card" data-topics="features interventions" data-keywords="grammar grammatical agreement syntax ablation patching steering attribution feature community clusters experiment layer heatmap">
+          <a class="dashboard-link" href="dashboards/grammar/" aria-labelledby="grammar-title" aria-describedby="grammar-description">
+            <div class="card-topline"><span class="card-number">02 / LANGUAGE</span><span class="card-glyph" aria-hidden="true">a → b</span></div>
+            <h3 id="grammar-title">Grammar &amp; agreement</h3>
+            <p id="grammar-description">Inspect attribution graphs and feature communities for grammatical agreement. Compare ablation, patching, and steering results.</p>
+            <ul class="card-tags" aria-label="Topics"><li>Attribution graphs</li><li>Feature communities</li><li>Interventions</li></ul>
+            <div class="card-footer"><span>Grammar agreement</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+        <article class="dashboard-card" data-topics="features interventions" data-keywords="physics scalar vector operator concepts circuit paths contributions feature overlap cluster ablation patching steering">
+          <a class="dashboard-link" href="dashboards/physics/" aria-labelledby="physics-title" aria-describedby="physics-description">
+            <div class="card-topline"><span class="card-number">03 / PHYSICS</span><span class="card-glyph" aria-hidden="true">s, v, Ô</span></div>
+            <h3 id="physics-title">Physics concepts</h3>
+            <p id="physics-description">Explore scalar, vector, and operator classifications through circuit paths, feature contributions, and overlap between prompts.</p>
+            <ul class="card-tags" aria-label="Topics"><li>Circuit paths</li><li>Contributions</li><li>Feature overlap</li></ul>
+            <div class="card-footer"><span>Scalar · vector · operator</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+        <article class="dashboard-card" data-topics="features clustering interventions" data-keywords="physics decay alpha beta α β prompt families causal circuit ablation patching steering feature grouping communities timeline">
+          <a class="dashboard-link" href="dashboards/decay/" aria-labelledby="decay-title" aria-describedby="decay-description">
+            <div class="card-topline"><span class="card-number">04 / PHYSICS</span><span class="card-glyph" aria-hidden="true">α ↔ β</span></div>
+            <h3 id="decay-title">Decay-type circuits</h3>
+            <p id="decay-description">Follow alpha and beta decay decisions across prompt families, feature groups, and layer timelines. Examine individual interventions.</p>
+            <ul class="card-tags" aria-label="Topics"><li>Prompt families</li><li>Feature grouping</li><li>Layer timelines</li></ul>
+            <div class="card-footer"><span>Alpha / beta classification</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+        <article class="dashboard-card" data-topics="features interventions" data-keywords="multilingual english french en fr antonym antonyms abstraction b1 b1-v2 circuit prompt trace timeline interventions overlap iou communities">
+          <a class="dashboard-link" href="dashboards/b1/" aria-labelledby="b1-title" aria-describedby="b1-description">
+            <div class="card-topline"><span class="card-number">05 / LANGUAGE</span><span class="card-glyph language-glyph" aria-hidden="true">EN / FR</span></div>
+            <h3 id="b1-title">Multilingual circuits</h3>
+            <p id="b1-description">Compare English and French antonym prompts. Trace feature overlap, communities, and intervention effects across languages.</p>
+            <ul class="card-tags" aria-label="Topics"><li>Antonyms</li><li>Prompt comparison</li><li>Cross-language overlap</li></ul>
+            <div class="card-footer"><span>B1-v2 · English / French</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+        <article class="dashboard-card" data-topics="clustering features" data-keywords="latent states clustering semantics candidate selection intensive extensive abstraction feature heatmap similarity tsne t-sne ablation probe">
+          <a class="dashboard-link" href="dashboards/latent/" aria-labelledby="latent-title" aria-describedby="latent-description">
+            <div class="card-topline"><span class="card-number">06 / LATENT STRUCTURE</span><span class="card-glyph cluster-glyph" aria-hidden="true">∴ ∴</span></div>
+            <h3 id="latent-title">Latent states &amp; clustering</h3>
+            <p id="latent-description">Explore prompt–feature structure, compare clustering methods, and inspect cluster semantics, candidate selection, and intensive/extensive concepts.</p>
+            <ul class="card-tags" aria-label="Topics"><li>Clustering methods</li><li>Cluster semantics</li><li>Candidate selection</li></ul>
+            <div class="card-footer"><span>Latent state explorer</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden>
+        <p class="eyebrow">No matching dashboards</p>
+        <h3>Try a broader research question.</h3>
+        <p>Search for a concept such as “grammar”, a method such as “steering”, or clear the current topic filter.</p>
+        <button type="button" class="primary-link" id="reset-search">Show all dashboards <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section id="questions" class="questions-section" aria-labelledby="questions-title">
+      <div class="page-width">
+        <div class="section-heading"><div><p class="eyebrow">Find your starting point</p><h2 id="questions-title">Browse by research question.</h2></div><p class="section-note">Different questions call<br class="desktop-break"> for different views.</p></div>
+        <div class="question-grid">
+          <a class="question-link" href="#topic=geometry" data-filter-jump><span class="question-number">01</span><h3>How do concept directions change through depth?</h3><span class="question-topic">Math &amp; geometry <b aria-hidden="true">↗</b></span></a>
+          <a class="question-link" href="#topic=features" data-filter-jump><span class="question-number">02</span><h3>Which features connect a prompt to its answer?</h3><span class="question-topic">Features &amp; circuits <b aria-hidden="true">↗</b></span></a>
+          <a class="question-link" href="#topic=clustering" data-filter-jump><span class="question-number">03</span><h3>What structure emerges when features are grouped?</h3><span class="question-topic">Clustering &amp; latent structure <b aria-hidden="true">↗</b></span></a>
+          <a class="question-link" href="#topic=interventions" data-filter-jump><span class="question-number">04</span><h3>What changes when we intervene inside the model?</h3><span class="question-topic">Causal interventions <b aria-hidden="true">↗</b></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page-width"><span>Research Atlas <span class="footer-separator" aria-hidden="true">/</span> Mechanistic interpretability</span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

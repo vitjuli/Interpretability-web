@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geometry &amp; mathematics · Interpretability Research</title>
+  <meta name="description" content="Explore archived model geometry, steering, feature and control measurements across 32 research sections.">
+  <link rel="stylesheet" href="./style.css">
+  <script src="../../shared/plotly.min.js" defer></script>
+  <script src="./app.js" defer></script>
+<link rel="stylesheet" href="../../shared/navigation.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-symbol">δ · u · w</span><strong>Geometry of<br>model decisions</strong><p>Read the evidence.<br>Explore the relationships.</p></div>
+      <label class="search-label" for="section-search">Find a section</label><input id="section-search" type="search" placeholder="Steering, particles, rotation…">
+      <label class="sr-only" for="section-select">Research section</label><select id="section-select" aria-label="Research section"></select>
+      <nav id="section-nav" aria-label="Chapter sections"></nav>
+      <p class="sidebar-note">32 archived sections · no model execution · scientific data only</p>
+    </aside>
+    <main>
+      <section class="intro">
+        <div class="eyebrow" id="topic">CHAPTER 6</div>
+        <h1 id="page-title">Loading the research explorer…</h1>
+        <p class="lede" id="page-description"></p>
+        <div class="formula" id="formula"></div>
+        <div class="evidence-note" id="page-note"></div>
+      </section>
+      <section id="special" class="panel special" hidden>
+        <div class="panel-heading"><div><span class="eyebrow">GEOMETRIC VIEW</span><h2 id="special-title"></h2></div><span class="pill">Saved vectors & projections</span></div>
+        <div id="special-controls" class="controls"></div>
+        <div id="special-plot" class="plot"></div><p id="special-caption" class="caption"></p>
+      </section>
+      <section class="panel">
+        <div class="panel-heading"><div><span class="eyebrow">EVIDENCE EXPLORER</span><h2>Measurements, with their controls</h2></div><span id="dataset-count" class="pill"></span></div>
+        <label for="dataset-select" class="field-label">Saved dataset</label><select id="dataset-select" class="dataset-select"></select>
+        <div id="dataset-description" class="caption"></div>
+        <div class="controls chart-controls">
+          <label>Chart<select id="chart-select"><option value="line">Lines + points</option><option value="scatter">Scatter</option><option value="bar">Bars</option><option value="heatmap">Heatmap (cell mean)</option><option value="histogram">Distribution</option></select></label>
+          <label>X axis<select id="x-select"></select></label><label>Y value<select id="y-select"></select></label><label>Series / heatmap rows<select id="group-select"></select></label>
+          <label class="check"><input id="log-y" type="checkbox"> Logarithmic Y</label>
+        </div>
+        <div id="filters" class="controls filter-controls"></div>
+        <div id="plot" class="plot" role="img" aria-label="Chart of selected archived measurements"></div>
+        <div class="plot-footer"><p id="plot-caption" class="caption" aria-live="polite"></p><button id="reset-controls" class="quiet-button">Reset view</button></div>
+      </section>
+      <section class="panel table-panel">
+        <div class="panel-heading"><div><span class="eyebrow">EXACT VALUES</span><h2>Inspect the rows</h2></div><button id="download-csv" class="quiet-button">Download filtered CSV ↓</button></div>
+        <input id="row-search" type="search" placeholder="Search these rows or synthetic prompts…" aria-label="Search dataset rows">
+        <div class="table-scroll"><table id="data-table"><thead></thead><tbody></tbody></table></div>
+        <div class="table-footer"><span id="table-caption" class="caption"></span><button id="table-prev" class="quiet-button">Previous</button><button id="table-next" class="quiet-button">Next</button></div>
+      </section>
+      <section id="sources" class="panel sources">
+        <span class="eyebrow">PROVENANCE & SCOPE</span><h2>What this view contains</h2>
+        <p id="source-current"></p><p id="source-page"></p><a id="download-json" download>Download the exported table as JSON ↓</a>
+        <p>Numbers come from archived scientific outputs. Charts and filters do not turn correlations into causal mechanisms. The optional cloud translation is a two-dimensional illustration; measured intervention outcomes are available as separate datasets.</p>
+        <details><summary>Export scope and unavailable source variants</summary><div id="scope-details"></div></details>
+      </section>
+      <footer>Static adaptation of the Chapter 6 research interface. Original source results remain unchanged.</footer>
+    </main>
+  </div>
+  <div id="error" role="alert" hidden></div>
+<script src="../../shared/navigation.js" data-dashboard="geometry"></script>
+</body>
+</html>
